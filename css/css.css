@@ -1,19 +1,22 @@
-/*      ... стандартные правила CSS ...       */
-
-html , body{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+body {
     background: 
     linear-gradient(217deg, #e7b2e7, #e9d0f4 70.71%), 
     linear-gradient(127deg, #efc2ee, #cea8d8 70.71%),
     linear-gradient(336deg, #eaa4f9, #ecacf0 70.71%);
+    color: #532256;
 }
 h1 {
-  font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)))
+    font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)))
 }
 h3 {
-  font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)))
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)))
 }
+
 .header {
     width: auto;
     height: 140px;
@@ -30,152 +33,63 @@ h3 {
     linear-gradient(336deg, #efc2ee, #c393d0 70.71%),
     linear-gradient(217deg, #c271d2, #d751e1 70.71%);
     border-bottom: 3px ridge #90008b6a;
+    margin-bottom: 10px;
 }
 .podval_color {
-  margin-top: 15px;
-  width: 100%;
-  background: 
-  linear-gradient(127deg, #b07ab0, #c38fda 20.71%), 
-  linear-gradient(336deg, #946c93, #b86fcd 20.71%),
-  linear-gradient(217deg, #954fa3, #9d45a3 20.71%);
+    margin-top: 50px;
+    width: 100%;
+    background: 
+    linear-gradient(127deg, #b07ab0, #c38fda 20.71%), 
+    linear-gradient(336deg, #946c93, #b86fcd 20.71%),
+    linear-gradient(217deg, #954fa3, #9d45a3 20.71%);
 }
+
 .icon {
-  height: auto;
-  width: 20%;
-  margin-right: -10%;
-  margin-bottom: -155px;
+    height: auto;
+    width: 20%;
+    margin-right: -10%;
+    margin-bottom: -155px;
 }
 .heading {
-  width: auto;
-  margin: auto;
-  color: #532256;
+    width: auto;
+    margin: auto;
+    color: #532256;
 }
 .body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .bodier {
-  width: 1000px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.image {
-  width: 200px;
-  height: auto;
-  border: 1px solid #90008b6a;
-  border-radius: 15px;
-  margin: 10px;
-}
-.cakes {
-  width: 220px;
-  flex-direction: column;
-  border: 2px ridge #90008b6a;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
 }
 ul {
-  list-style-type: none;
-  margin-left: -45px;
+    list-style-type: none;
+    margin-left: -45px;
 }
 .podval {
-  margin: 10px 40px 40px;
+    padding: 10px 40px 40px;
 }
 ol {
-  list-style-type: none;
+    list-style-type: none;
 }
 .icon_number {
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 }
-
-@media (max-width:1000px) {
-  .bodier {
-    width: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .podval {
-    width: 800px;
-    margin-bottom: 50px;
-  }
-
-}
-
-
-@media (max-width:800px) {
-    /*      ... правила для планшетов ...     */
-    .header {
-      width: auto;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      background: 
-      linear-gradient(127deg, #e7b2e7, #e9d0f4 70.71%), 
-      linear-gradient(336deg, #efc2ee, #c393d0 70.71%),
-      linear-gradient(217deg, #c271d2, #d751e1 70.71%);
-      border-bottom: 2px ridge #90008b6a;
-  }
-  .icon {
-    height: auto;
-    margin: auto;
-    width: 400px;
-  }
-  .bodier {
-    width: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .podval {
-    margin: 10px 40px 40px;
-  }
-
-
-  }
-  @media (max-width:500px) {
-    /*      ... правила для смартфонов ...    */
-    .header {
-      width: auto;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      background: 
-      linear-gradient(127deg, #e7b2e7, #e9d0f4 70.71%), 
-      linear-gradient(336deg, #efc2ee, #c393d0 70.71%),
-      linear-gradient(217deg, #c271d2, #d751e1 70.71%);
-      border-bottom: 2px ridge #90008b6a;
-    }
-  .icon {
-    height: auto;
-    width:auto;
-    margin: auto;
-  }
-
-  .bodier {
-    width: 320px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .image {
-    width: 130px;
+.image {
+    width: 300px;
     height: auto;
     border: 1px solid #90008b6a;
     border-radius: 15px;
-    margin: 10px;
-  }
-  .cakes {
-    width: 150px;
+    margin: 15px;
+}
+.cakes {
+    width: 330px;
     flex-direction: column;
     border: 2px ridge #90008b6a;
     border-radius: 15px;
@@ -183,14 +97,130 @@ ol {
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-  .podval {
-    margin: 10px 40px 40px;
-  }
-  ul {
-    list-style-type: none;
-    margin-left: -35px;
-  }
-
-
-  }
+    padding: 10px 0px 50px ;
+}
+.text {
+    color: #130514;
+    width: 85%;
+    font-size: 20px;
+}
+@media (max-width:1000px) {
+    .header {
+        width: auto;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: 
+        linear-gradient(127deg, #e7b2e7, #e9d0f4 70.71%), 
+        linear-gradient(336deg, #efc2ee, #c393d0 70.71%),
+        linear-gradient(217deg, #c271d2, #d751e1 70.71%);
+        border-bottom: 3px ridge #90008b6a;
+        margin-bottom: 10px;
+    }
+    .heading {
+        padding-top: 40px;
+        width: auto;
+        margin: auto;
+        color: #532256;
+    }
+    .image {
+        width: 200px;
+        height: auto;
+        border: 1px solid #90008b6a;
+        border-radius: 15px;
+        margin: 10px;
+    }
+    .cakes {
+        width: 220px;
+        flex-direction: column;
+        border: 2px ridge #90008b6a;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px 0px 50px ;
+    }
+    .text {
+        font-size: calc(15px + (20 - 15) * ((100vw - 800px) / (1000 - 800)));
+        width: 85%;
+    }
+}
+@media (max-width:800px) {
+    .heading {
+        padding-top: 0;
+        width: auto;
+        margin: auto;
+        color: #532256;
+    }
+    .icon {
+        height: auto;
+        margin: auto;
+        width: 400px;
+      }
+    .header {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background: 
+        linear-gradient(127deg, #e7b2e7, #e9d0f4 70.71%), 
+        linear-gradient(336deg, #efc2ee, #c393d0 70.71%),
+        linear-gradient(217deg, #c271d2, #d751e1 70.71%);
+        border-bottom: 2px ridge #90008b6a;
+        margin-bottom: 10px;
+        padding-bottom: 15px;
+    }
+    .image {
+        width: 140px;
+        height: auto;
+        border: 1px solid #90008b6a;
+        border-radius: 15px;
+        margin: 5px;
+    }
+    .cakes {
+        width: 150px;
+        flex-direction: column;
+        border: 2px ridge #90008b6a;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px 0px 50px ;
+    }
+    .text {
+        font-size: calc(10px + (15 - 10) * ((100vw - 500px) / (800 - 500)));
+        width: 85%;
+    }
+}
+@media (max-width:500px) {
+    .icon {
+        height: auto;
+        width:auto;
+        margin: auto;
+    }
+    .image {
+        width: 110px;
+        height: auto;
+        border: 1px solid #90008b6a;
+        border-radius: 15px;
+        margin: 5px;
+    }
+    .cakes {
+        width: 120px;
+        flex-direction: column;
+        border: 2px ridge #90008b6a;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px 0px 50px ;
+    }
+    .text {
+        font-size: 10px;
+        width: 85%;
+    }
+}
