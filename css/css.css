@@ -45,7 +45,7 @@ h1 {
   align-items: center;
 }
 .bodier {
-  width: 800px;
+  width: 1000px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -73,7 +73,7 @@ ul {
   margin-left: -45px;
 }
 .podval {
-  width: 800px;
+  width: 1000px;
   margin-bottom: 50px;
 }
 ol {
@@ -86,6 +86,20 @@ ol {
   margin-left: -30px;
 }
 
+@media (max-width:1000px) {
+  .bodier {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .podval {
+    width: 800px;
+    margin-bottom: 50px;
+  }
+
+}
 
 
 @media (max-width:800px) {
