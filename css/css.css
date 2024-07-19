@@ -202,14 +202,14 @@ ol {
         margin: auto;
     }
     .image {
-        width: 110px;
+        width: 100px;
         height: auto;
         border: 1px solid #90008b6a;
         border-radius: 15px;
         margin: 5px;
     }
     .cakes {
-        width: 120px;
+        width: 110px;
         flex-direction: column;
         border: 2px ridge #90008b6a;
         border-radius: 15px;
