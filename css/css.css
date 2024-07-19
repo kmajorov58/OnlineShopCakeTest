@@ -1,0 +1,181 @@
+/*      ... стандартные правила CSS ...       */
+
+html , body{
+    padding: 0;
+    margin: 0;
+    background: 
+    linear-gradient(217deg, #e7b2e7, #e9d0f4 70.71%), 
+    linear-gradient(127deg, #efc2ee, #cea8d8 70.71%),
+    linear-gradient(336deg, #eaa4f9, #ecacf0 70.71%);
+}
+h1 {
+  font-size: 35px;
+}
+.header {
+    width: auto;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /**
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    **/
+    background: 
+    linear-gradient(127deg, #e7b2e7, #e9d0f4 70.71%), 
+    linear-gradient(336deg, #efc2ee, #c393d0 70.71%),
+    linear-gradient(217deg, #c271d2, #d751e1 70.71%);
+    border-bottom: 3px ridge #90008b6a;
+}
+.icon {
+  height: auto;
+  width: 20%;
+  margin-right: -10%;
+  margin-bottom: -155px;
+}
+.heading {
+  width: auto;
+  margin: auto;
+  color: #532256;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bodier {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.image {
+  width: 200px;
+  height: auto;
+  border: 1px solid #90008b6a;
+  border-radius: 15px;
+  margin: 10px;
+}
+.cakes {
+  width: 220px;
+  flex-direction: column;
+  border: 2px ridge #90008b6a;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ul {
+  list-style-type: none;
+  margin-left: -45px;
+}
+.podval {
+  width: 800px;
+  margin-bottom: 50px;
+}
+ol {
+  list-style-type: none;
+}
+.icon_number {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  margin-left: -30px;
+}
+
+
+
+@media (max-width:800px) {
+    /*      ... правила для планшетов ...     */
+    .header {
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      background: 
+      linear-gradient(127deg, #e7b2e7, #e9d0f4 70.71%), 
+      linear-gradient(336deg, #efc2ee, #c393d0 70.71%),
+      linear-gradient(217deg, #c271d2, #d751e1 70.71%);
+      border-bottom: 2px ridge #90008b6a;
+  }
+  .icon {
+    height: auto;
+    margin: auto;
+    width: 400px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  .bodier {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .podval {
+    width: 500px;
+    margin-bottom: 50px;
+  }
+
+
+  }
+  @media (max-width:500px) {
+    /*      ... правила для смартфонов ...    */
+    .header {
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      background: 
+      linear-gradient(127deg, #e7b2e7, #e9d0f4 70.71%), 
+      linear-gradient(336deg, #efc2ee, #c393d0 70.71%),
+      linear-gradient(217deg, #c271d2, #d751e1 70.71%);
+      border-bottom: 2px ridge #90008b6a;
+    }
+  .icon {
+    height: auto;
+    width:auto;
+    margin: auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  .bodier {
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .image {
+    width: 130px;
+    height: auto;
+    border: 1px solid #90008b6a;
+    border-radius: 15px;
+    margin: 10px;
+  }
+  .cakes {
+    width: 150px;
+    flex-direction: column;
+    border: 2px ridge #90008b6a;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .podval {
+    width: 320px;
+    margin-bottom: 25px;
+  }
+
+
+
+  }
