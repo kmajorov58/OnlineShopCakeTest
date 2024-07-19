@@ -192,7 +192,7 @@ ol {
     }
     .text {
         font-size: calc(10px + (15 - 10) * ((100vw - 500px) / (800 - 500)));
-        width: 85%;
+        width: 90%;
     }
 }
 @media (max-width:500px) {
@@ -202,14 +202,14 @@ ol {
         margin: auto;
     }
     .image {
-        width: 100px;
+        width: 86px;
         height: auto;
         border: 1px solid #90008b6a;
         border-radius: 15px;
         margin: 5px;
     }
     .cakes {
-        width: 110px;
+        width: 96px;
         flex-direction: column;
         border: 2px ridge #90008b6a;
         border-radius: 15px;
@@ -220,7 +220,7 @@ ol {
         padding: 10px 0px 50px ;
     }
     .text {
-        font-size: 10px;
-        width: 85%;
+        font-size: calc(8px + (10 - 8) * ((100vw - 300px) / (500 - 300)));
+        width: 90%;
     }
 }
