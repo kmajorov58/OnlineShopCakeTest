@@ -175,7 +175,10 @@ ol {
     width: 320px;
     margin-bottom: 25px;
   }
-
+  ul {
+    list-style-type: none;
+    margin-left: -40px;
+  }
 
 
   }
