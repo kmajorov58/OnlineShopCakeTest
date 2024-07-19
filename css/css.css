@@ -9,7 +9,10 @@ html , body{
     linear-gradient(336deg, #eaa4f9, #ecacf0 70.71%);
 }
 h1 {
-  font-size: 35px;
+  font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)))
+}
+h3 {
+  font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)))
 }
 .header {
     width: auto;
@@ -27,6 +30,14 @@ h1 {
     linear-gradient(336deg, #efc2ee, #c393d0 70.71%),
     linear-gradient(217deg, #c271d2, #d751e1 70.71%);
     border-bottom: 3px ridge #90008b6a;
+}
+.podval_color {
+  margin-top: 15px;
+  width: 100%;
+  background: 
+  linear-gradient(127deg, #b07ab0, #c38fda 20.71%), 
+  linear-gradient(336deg, #946c93, #b86fcd 20.71%),
+  linear-gradient(217deg, #954fa3, #9d45a3 20.71%);
 }
 .icon {
   height: auto;
@@ -73,8 +84,7 @@ ul {
   margin-left: -45px;
 }
 .podval {
-  width: 1000px;
-  margin-bottom: 50px;
+  margin: 10px 40px 40px;
 }
 ol {
   list-style-type: none;
@@ -82,8 +92,6 @@ ol {
 .icon_number {
   width: 20px;
   height: 20px;
-  margin: 10px;
-  margin-left: -30px;
 }
 
 @media (max-width:1000px) {
@@ -120,9 +128,6 @@ ol {
     margin: auto;
     width: 400px;
   }
-  h1 {
-    font-size: 32px;
-  }
   .bodier {
     width: 500px;
     display: flex;
@@ -131,8 +136,7 @@ ol {
     justify-content: space-around;
   }
   .podval {
-    width: 500px;
-    margin-bottom: 50px;
+    margin: 10px 40px 40px;
   }
 
 
@@ -155,12 +159,7 @@ ol {
     width:auto;
     margin: auto;
   }
-  h1 {
-    font-size: 22px;
-  }
-  h3 {
-    font-size: 15px;
-  }
+
   .bodier {
     width: 320px;
     display: flex;
@@ -186,8 +185,7 @@ ol {
     margin-bottom: 10px;
   }
   .podval {
-    width: 320px;
-    margin-bottom: 25px;
+    margin: 10px 40px 40px;
   }
   ul {
     list-style-type: none;
